@@ -50,6 +50,14 @@ export default {
         }
       ]
     }
+  },
+  head () {
+    return {
+      title: 'Robbe Van Petegem | Digital Facilitator',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Digital Facilitator' }
+      ]
+    }
   }
 }
 </script>
