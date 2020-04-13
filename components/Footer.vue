@@ -19,7 +19,7 @@ export default {
       options: [
         {
           icon: 'email',
-          text: 'robbe@robbevanpetegem.be',
+          text: 'robbe@​robbevanpetegem.be',
           url: 'mailto:robbe@robbevanpetegem.be',
           urlBlank: false
         },

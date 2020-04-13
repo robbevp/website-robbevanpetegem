@@ -5,7 +5,7 @@
         <EmailIcon v-if="info.icon === 'email'" class="icon p-3 rounded-full md:transition-all md:delay-1200 md:duration-200 md:hover:delay-0 md:focus:delay-0 md:ease-out" width="36" height="36" />
         <LinkedinIcon v-else-if="info.icon === 'linkedin'" class="icon p-3 rounded-full md:transition-all md:delay-1200 md:duration-200 md:hover:delay-0 md:focus:delay-0 md:ease-out" width="36" height="36" />
         <PhoneIcon v-else-if="info.icon === 'phone'" class="icon p-3 rounded-full md:transition-all md:delay-1200 md:duration-200 md:hover:delay-0 md:focus:delay-0 md:ease-out" width="36" height="36" />
-        <span class="my-auto pl-2 pr-5 whitespace-no-wrap hidden md:block">
+        <span class="my-auto pl-2 pr-5 lg:whitespace-no-wrap hidden md:block" :class="{ 'whitespace-no-wrap': info.text.length < 20 }" >
           {{ info.text }}
         </span>
       </button>
@@ -56,4 +56,7 @@ export default {
   transition-delay: 0ms;
 }
 
+.button:active .icon {
+  @apply bg-green-600;
+}
 </style>
