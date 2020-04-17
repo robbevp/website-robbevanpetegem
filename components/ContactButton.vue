@@ -28,7 +28,14 @@ export default {
   props: {
     info: {
       type: Object,
-      required: true
+      required: true,
+      validator (value) {
+        return [
+          'email',
+          'linkedin',
+          'phone'
+        ].includes(value.icon)
+      }
     }
   },
   computed: {
