@@ -1,6 +1,13 @@
-# website-robbevanpetegem
+# robbevanpetegem.be
 
-> Personal website for Robbe Van Petegem
+This repository holds the code and content for my personal website. You can see the result at [robbevanpetegem.be](https://www.robbevanpetegem.be).
+
+You're welcome to have a look at the source code and take inspiration for your own projects. All code is released under the hippocratic license
+
+## Tools used
+* Nuxt.js as main framework
+* Tailwind.css for styling
+* Netlify for deployment of the generated site
 
 ## Build Setup
 
@@ -18,5 +25,3 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
