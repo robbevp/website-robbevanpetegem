@@ -65,7 +65,7 @@ collections:
       preview: false
     fields:
       - label: Type
-        name: title
+        name: type
         widget: select
         options:
         - { label: Email, value: email }
