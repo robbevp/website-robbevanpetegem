@@ -1,0 +1,76 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: assets/img
+public_folder: /    
+
+collections:
+  - label: Settings
+    name: settings
+    files:
+      - label: Global settings
+        name: index
+        file: site/content/global.yml
+        fields:
+          - {label: Site Title, name: title, widget: string}
+          - {label: Site Subtitle, name: subtitle, widget: string}
+          - { label: SEO Description, name: seoDescription, widget: text, required: false }
+          - { label: SEO Meta Image, name: seoMetaImage, widget: image, required: false }
+  - label: Pages
+    name: pages
+    files:
+      - label: Index Page
+        name: index
+        file: site/content/index.yml
+        fields:
+          - {label: Intro, name: intro, widget: markdown}
+          - label: About
+            name: about
+            widget: Object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: markdown }
+              - { label: Image, name: imageUrl, widget: image }
+              - { label: Image Description, name: imageUrl, widget: string }
+          - label: SEO
+            name: seo
+            widget: Object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: markdown }
+              - { label: SEO Meta Image, name: seoMetaImage, widget: image, required: false }
+  - name: projects
+    label: Projects
+    format: json
+    folder: assets/content/projects
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{title}}'
+    editor:
+      preview: false
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Description, name: description, widget: markdown }
+      - { label: Quote, name: quote, widget: string, required: false }
+      - { label: Image, name: imageURL, widget: image, allow_multiple: false }
+      - { label: Image description, name: imageAlt, widget: string}
+  - name: contact_options
+    label: Contact Options
+    format: json
+    folder: assets/content/contact_options
+    create: true
+    slug: '{{type}}'
+    editor:
+      preview: false
+    fields:
+      - label: Type, 
+        name: title, 
+        widget: select,
+        options:
+        - { label: Email, value: email }
+        - { label: Phone, value: phone }
+        - { label: LinkedIn, value: linkedin }
+      - { label: Publish Date, name: date, widget: datetime }
+      - { label: url, name: url, widget: string }
+      - { label: External url?, name: urlBlank, widget: boolean }
