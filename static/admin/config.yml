@@ -11,7 +11,8 @@ collections:
     files:
       - label: Global settings
         name: index
-        file: site/content/global.yml
+        format: json
+        file: assets/content/global.json
         fields:
           - {label: Site Title, name: title, widget: string}
           - {label: Site Subtitle, name: subtitle, widget: string}
@@ -22,7 +23,8 @@ collections:
     files:
       - label: Index Page
         name: index
-        file: site/content/index.yml
+        format: json
+        file: assets/content/index.json
         fields:
           - {label: Intro, name: intro, widget: markdown}
           - label: About
