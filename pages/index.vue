@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import About from '~/components/About'
 import Header from '~/components/Header'
 import ProjectCard from '~/components/ProjectCard'
@@ -24,32 +25,8 @@ export default {
     Header,
     ProjectCard
   },
-  data () {
-    return {
-      projects: [
-        {
-          name: 'Project 1',
-          description: "Some description of the project here. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-          quote: '',
-          imageUrl: 'placeholder.png',
-          imageAlt: 'placeholderImage'
-        },
-        {
-          name: 'Project 2',
-          description: "Some description of the project here. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-          quote: 'A really nice quote from the client',
-          imageUrl: 'placeholder.png',
-          imageAlt: 'placeholderImage'
-        },
-        {
-          name: 'Project 3',
-          description: "Some description of the project here. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-          quote: '',
-          imageUrl: 'placeholder.png',
-          imageAlt: 'placeholderImage'
-        }
-      ]
-    }
+  computed: {
+    ...mapGetters(['projects/projects'])
   },
   head () {
     return {
