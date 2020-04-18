@@ -7,6 +7,7 @@ You're welcome to have a look at the source code and take inspiration for your o
 ## Tools used
 * Nuxt.js as main framework
 * Tailwind.css for styling
+* Netlify CMS for content
 * Netlify for deployment of the generated site
 
 ## Build Setup
