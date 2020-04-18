@@ -2,12 +2,16 @@ backend:
   name: git-gateway
   branch: master
 
+publish_mode: editorial_workflow
+show_preview_links: true
+
 media_folder: assets/img
 public_folder: /    
 
 collections:
   - label: Settings
     name: settings
+    preview_path: /
     files:
       - label: Global settings
         name: index
@@ -25,6 +29,7 @@ collections:
             - { label: SEO Meta Image, name: metaImage, widget: image, required: false }
   - label: Pages
     name: pages
+    preview_path: /
     files:
       - label: Index Page
         name: index
@@ -53,6 +58,7 @@ collections:
     folder: assets/content/projects
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{title}}'
+    preview_path: /
     editor:
       preview: false
     fields:
@@ -68,6 +74,7 @@ collections:
     folder: assets/content/contact_options
     create: true
     slug: '{{type}}'
+    preview_path: /
     editor:
       preview: false
     fields:
