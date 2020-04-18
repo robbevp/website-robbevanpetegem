@@ -1,6 +1,9 @@
 {
   "title": "Robbe Van Petegem",
   "subtitle": "Digital Facilitator",
-  "seoDescription": "Digital Facilitator",
-  "seoMetaImage": "/placeholder.png"
+  "seo": {
+    "title": "Robbe Van Petegem | Digital Facilitator",
+    "description": "Digital Facilitator",
+    "metaImage": "/placeholder.png"
+  }
 }
