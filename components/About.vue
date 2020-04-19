@@ -1,5 +1,5 @@
 <template>
-  <aside class="col-span-12 row-span-1 grid grid-cols-12 grid-flow-row gap-6">
+  <aside class="col-span-12 row-span-1 grid grid-cols-12 grid-flow-row gap-6" id="about">
     <img :src="image" :alt="imageAlt" class="col-span-12 sm:col-span-4 md:col-span-3 row-span-1 sm:row-span-2 rounded-full w-full max-w-sm flex mx-auto sm:my-auto p-4">
     <h2 class="text-2xl text-green-600 text-center sm:text-left row-span-1 col-span-12 sm:col-span-5 sm:flex sm:my-auto">
       {{ title }}
