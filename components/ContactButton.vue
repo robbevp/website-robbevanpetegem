@@ -54,13 +54,13 @@ export default {
 .button:hover .icon {
   @apply bg-green-400;
   @apply text-white;
-  transition-delay: 0ms;
+  @apply delay-0;
 }
 
 .button:focus .icon {
   @apply bg-green-400;
   @apply text-white;
-  transition-delay: 0ms;
+  @apply delay-0;
 }
 
 .button:active .icon {
