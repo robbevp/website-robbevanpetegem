@@ -9,7 +9,7 @@
       class="w-full my-auto col-span-7 md:col-span-3 md:order-2 p-4 rounded-lg"
     >
     <div class="col-span-7 md:col-span-4 md:order-1 p-4">
-      <h2 class="text-2xl text-purple-600 pb-4">
+      <h2 class="text-2xl text-green-600 pb-4">
         {{ title }}
       </h2>
       <div v-html="$md.render(description)" />
