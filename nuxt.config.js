@@ -40,14 +40,20 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    // Doc: https://github.com/aceforth/nuxt-optimized-images
+    '@aceforth/nuxt-optimized-images',
+    '@nuxtjs/markdownit'
   ],
   /*
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/markdownit'
   ],
+
+  optimizedImages: {
+    optimizedImages: true
+  },
 
   // [optional] markdownit options
   // See https://github.com/markdown-it/markdown-it

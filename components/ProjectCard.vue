@@ -2,7 +2,8 @@
   <section :id="title.replace(/\s+/g, '').toLowerCase()" class="row-span-2 col-span-12 md:col-span-9 lg:col-span-7 grid grid-cols-7 border border-gray-400 border-4 rounded-lg">
     <img
       v-if="imageURL"
-      :src="image"
+      :srcset="image.set"
+      :src="image.one"
       :alt="imageAlt"
       :title="imageAlt"
       loading="lazy"
@@ -37,7 +38,10 @@ export default {
   computed: {
     image () {
       if (!this.imageURL) { return }
-      return require(`~/assets/img${this.imageURL}`)
+      return {
+        one: require(`~/assets/img${this.imageURL}?resize&size=600`),
+        set: require(`~/assets/img${this.imageURL}?resize&sizes[]=300&sizes[]=600&sizes[]=1200`)
+      }
     }
   }
 }

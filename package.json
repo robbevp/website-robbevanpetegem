@@ -15,6 +15,7 @@
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.0.0",
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/markdownit": "^1.2.9",
@@ -25,6 +26,8 @@
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.1.2",
     "mdi-vue": "^1.4.6",
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.2",
+    "responsive-loader": "^1.2.0",
+    "sharp": "^0.25.2"
   }
 }
