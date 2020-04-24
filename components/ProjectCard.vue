@@ -40,7 +40,9 @@ export default {
       if (!this.imageURL) { return }
       return {
         one: require(`~/assets/img${this.imageURL}?resize&size=600`),
-        set: require(`~/assets/img${this.imageURL}?resize&sizes[]=300&sizes[]=600&sizes[]=1200`)
+        set: require(`~/assets/img${this.imageURL}?resize&sizes=300[]=600&sizes[]=900&sizes[]=1200`),
+        webp: require(`~/assets/img${this.imageURL}?webp&resize&size=600`),
+        webpSet: require(`~/assets/img${this.imageURL}?webp&resize&sizes=300[]=600&sizes[]=900&sizes[]=1200`)
       }
     }
   }
