@@ -1,5 +1,5 @@
 <template>
-  <section :id="title" class="row-span-2 col-span-12 md:col-span-9 lg:col-span-7 grid grid-cols-7 border border-gray-400 border-4 rounded-lg mx-4 md:mx-0">
+  <section :id="title" class="row-span-2 col-span-12 md:col-span-9 lg:col-span-7 grid grid-cols-7 border border-gray-400 border-4 rounded-lg">
     <img
       v-if="imageURL"
       :src="image"
