@@ -1,6 +1,6 @@
 <template>
   <div class="absolute background w-full left-0 overflow-hidden">
-    <svg class="min-h-80 min-w-120vw -ml-20 sm:-ml-8 md:ml-0 fill-gradient" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366.55 501.98">
+    <svg class="min-h-80 h-full min-w-120vw -ml-20 sm:-ml-8 md:ml-0 fill-gradient" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366.55 501.98">
       <defs>
         <linearGradient id="header-shape-gradient" gradientTransform="rotate(75deg)">
           <stop offset="0%" stop-color="var(--color-start)" />
