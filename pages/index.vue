@@ -1,6 +1,6 @@
 <template>
   <main class="container mb-4 grid grid-cols-12 grid-flow-row col-gap-6 row-gap-16">
-    <HeaderBackground class="text-teal-500 z-0" />
+    <HeaderBackground class="text-teal-500 -z-10" />
     <Header class="py-10 mt-28 z-10" />
     <section id="intro" class="row-start-2 row-span-1 col-span-12 sm:col-start-2 sm:col-span-10 md:col-start-2 md:col-span-7 lg:col-start-2 lg:col-span-5" v-html="$md.render(intro)" />
     <ProjectCard v-for="(project, index) in projects" :key="`project${index}`" :project="project" :class="{'md:col-start-4 lg:col-start-6': index % 2 === 0 }" />
