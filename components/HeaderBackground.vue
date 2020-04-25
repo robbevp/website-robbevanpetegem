@@ -32,7 +32,7 @@ export default {
 
 #header-shape-gradient {
   --color-start: theme('colors.teal.400');
-  --color-stop: theme('colors.teal.700');
+  --color-stop: theme('colors.teal.600');
 }
 
 </style>
