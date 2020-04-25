@@ -5,7 +5,7 @@
         {{ legal.name }}, {{ legal.address }} - {{ legal.vat }}
       </p>
     </div>
-    <div class="footer fixed bottom-0 py-4 md:py-6 inset-x-auto w-full h-24 md:h-28 bg-green-400 text-white md:text-black md:bg-white">
+    <div class="footer fixed bottom-0 py-4 md:py-6 inset-x-auto w-full h-24 md:h-28 bg-green-400 text-white md:text-black md:bg-white z-20">
       <div class="container grid grid-cols-3 mx-auto">
         <ContactButton v-for="option in contactOptions" :key="option.type" :info="option" />
       </div>

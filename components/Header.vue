@@ -1,9 +1,9 @@
 <template>
   <header class="row-span-1 col-span-12 md:col-start-2 md:col-span-10">
-    <h1 class="text-4xl pb-4 leading-10 text-teal-700">
+    <h1 class="text-4xl pb-4 leading-10 text-white">
       {{ title }}
     </h1>
-    <h2 class="subtitle text-teal-600 text-2xl pb-4">
+    <h2 class="subtitle text-gray-100 text-2xl pb-4">
       {{ subtitle }}
     </h2>
   </header>
