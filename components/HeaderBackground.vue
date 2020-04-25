@@ -1,6 +1,6 @@
 <template>
-  <div class="absolute background w-full left-0 overflow-hidden">
-    <svg class="min-h-80 h-full min-w-120vw -ml-20 sm:-ml-8 md:ml-0 fill-gradient" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366.55 501.98">
+  <div class="absolute  md:-bottom-80 w-full left-0 overflow-hidden">
+    <svg class="h-84 md:h-full min-w-120vw -ml-16 sm:-ml-8 md:ml-0 fill-gradient" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366.55 495.27">
       <defs>
         <linearGradient id="header-shape-gradient" gradientTransform="rotate(75deg)">
           <stop offset="0%" stop-color="var(--color-start)" />
@@ -20,8 +20,10 @@ export default {
 
 <style>
 
-.background {
-  bottom: calc(100vh - 20rem);
+@screen md {
+  .md\:-bottom-80 {
+    bottom: calc(100vh - 20rem)
+  }
 }
 
 .fill-gradient {

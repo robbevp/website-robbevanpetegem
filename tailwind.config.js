@@ -27,7 +27,8 @@ module.exports = {
     },
     extend: {
       spacing: {
-        28: '7rem'
+        28: '7rem',
+        84: '21rem'
       },
       transitionDelay: {
         0: '0ms',
