@@ -2,7 +2,7 @@
   <div class="absolute md:-bottom-80 w-full left-0 overflow-hidden">
     <svg class="h-84 md:h-full min-w-120vw -ml-16 sm:-ml-8 md:ml-0 fill-gradient" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366.55 495.27">
       <defs>
-        <linearGradient id="header-shape-gradient" gradientTransform="rotate(75deg)">
+        <linearGradient id="header-shape-gradient" gradientTransform="rotate(75)">
           <stop offset="0%" stop-color="var(--color-start)" />
           <stop offset="100%" stop-color="var(--color-stop)" />
         </linearGradient>
