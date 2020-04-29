@@ -27,7 +27,7 @@ const actions = {
 }
 
 const getters = {
-  contactOptions: state => Object.values(state.contactOptions).sort((o1, o2) => new Date(o1.date) > new Date(o2.date))
+  contactOptions: state => Object.values(state.contactOptions).sort((o1, o2) => o1.order > o2.order)
 }
 
 export default {

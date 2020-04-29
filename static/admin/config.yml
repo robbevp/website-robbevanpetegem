@@ -80,7 +80,7 @@ collections:
     format: json
     folder: assets/content/contact_options
     create: true
-    slug: '{{type}}'
+    slug: '{{order}}-{{type}}'
     preview_path: /
     editor:
       preview: false
@@ -92,6 +92,11 @@ collections:
         - { label: Email, value: email }
         - { label: Phone, value: phone }
         - { label: LinkedIn, value: linkedin }
+      - label: Order
+        name: oder
+        widget: number
+        valueType: int
+        min: 1
       - { label: Publish Date, name: date, widget: datetime }
       - { label: Text, name: text, widget: string }
       - { label: Url, name: url, widget: string }
