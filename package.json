@@ -25,7 +25,7 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-nuxt": ">=1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "mdi-vue": "^1.6.2",
+    "mdi-vue": "^1.6.3",
     "prettier": "^2.0.5",
     "responsive-loader": "^1.2.0",
     "sharp": "^0.25.4"
