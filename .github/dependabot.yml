@@ -1,0 +1,13 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    day: saturday
+    timezone: CET
+  open-pull-requests-limit: 10
+  reviewers:
+  - robbevp
+  assignees:
+  - robbevp
