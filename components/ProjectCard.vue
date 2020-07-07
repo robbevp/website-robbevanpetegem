@@ -13,6 +13,8 @@
       <h2 class="text-2xl text-green-600 pb-4">
         {{ title }}
       </h2>
+      <!-- There currently isn't a better way to render markdown. Since this content isn't user generated we have less to worry about an XSS attack -->
+      <!-- eslint-disable-next-line vue/no-v-html -->
       <div v-html="$md.render(description)" />
     </div>
     <q v-if="quote" class="col-span-7 text-center text-2xl italic font-light pt-2 pb-4">
