@@ -5,9 +5,18 @@ updates:
   schedule:
     interval: weekly
     day: saturday
-    timezone: CET
+    time: "06:00"
+    timezone: Europe/Brussels
   open-pull-requests-limit: 10
   reviewers:
   - robbevp
-  assignees:
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: weekly
+    day: saturday
+    time: "06:00"
+    timezone: Europe/Brussels
+  open-pull-requests-limit: 10
+  reviewers:
   - robbevp
