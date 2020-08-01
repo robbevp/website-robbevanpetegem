@@ -1,5 +1,6 @@
 export default {
   mode: 'universal',
+  target: 'static',
   telemetry: false,
   /*
    ** Headers of the page
