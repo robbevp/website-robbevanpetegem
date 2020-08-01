@@ -15,7 +15,7 @@
     "nuxt": "^2.13.3"
   },
   "devDependencies": {
-    "@aceforth/nuxt-optimized-images": "^1.0.1",
+    "@aceforth/nuxt-optimized-images": "^1.1.0",
     "@nuxtjs/eslint-config": "^3.0.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/markdownit": "^1.2.10",
