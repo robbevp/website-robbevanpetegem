@@ -28,6 +28,6 @@
     "mdi-vue": "^1.7.1",
     "prettier": "^2.1.2",
     "responsive-loader": "^1.2.0",
-    "sharp": "^0.26.0"
+    "sharp": "^0.26.1"
   }
 }
