@@ -24,7 +24,7 @@ jobs:
         yarn install
     - name: Build
       run: |
-        yarn run build
+        yarn run generate --fail-on-error
   lint:
     runs-on: ubuntu-latest
     steps:
