@@ -1,5 +1,5 @@
 <template>
-  <section :id="title.replace(/\s+/g, '').toLowerCase()" class="row-span-2 col-span-12 md:col-span-9 lg:col-span-7 grid grid-cols-7 border border-gray-400 border-4 rounded-lg">
+  <section :id="title.replace(/\s+/g, '').toLowerCase()" class="row-span-2 col-span-12 md:col-span-9 lg:col-span-7 grid grid-cols-7 border border-gray-400 rounded-lg">
     <img
       v-if="imageURL"
       :srcset="image.set"
