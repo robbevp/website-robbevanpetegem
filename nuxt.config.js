@@ -1,35 +1,33 @@
 export default {
-  target: 'static',
+  target: "static",
   telemetry: false,
   /*
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: process.env.npm_package_name || "",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        hid: "description",
+        name: "description",
+        content: process.env.npm_package_description || "",
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     htmlAttrs: {
-      lang: 'be-nl'
-    }
+      lang: "be-nl",
+    },
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: "#fff" },
   /*
    ** Global CSS
    */
-  css: [
-
-  ],
+  css: [],
   /*
    ** Plugins to load before mounting the App
    */
@@ -39,21 +37,20 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
+    "@nuxtjs/eslint-module",
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss',
+    "@nuxtjs/tailwindcss",
     // Doc: https://github.com/aceforth/nuxt-optimized-images
-    '@aceforth/nuxt-optimized-images',
-    '@nuxtjs/markdownit'
+    "@aceforth/nuxt-optimized-images",
+    "@nuxtjs/markdownit",
   ],
   /*
    ** Nuxt.js modules
    */
-  modules: [
-  ],
+  modules: [],
 
   optimizedImages: {
-    optimizedImages: true
+    optimizedImages: true,
   },
 
   // [optional] markdownit options
@@ -61,7 +58,7 @@ export default {
   markdownit: {
     linkify: true,
     breaks: true,
-    injected: true
+    injected: true,
   },
   /*
    ** Build configuration
@@ -70,6 +67,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend (config, ctx) {}
-  }
-}
+    extend(config, ctx) {},
+  },
+};

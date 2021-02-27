@@ -5,39 +5,43 @@
         {{ legal.name }}, {{ legal.address }} - {{ legal.vat }}
       </p>
     </div>
-    <div class="footer fixed bottom-0 py-4 md:py-6 inset-x-auto w-full h-24 md:h-28 bg-green-400 text-white md:text-black md:bg-white z-20">
+    <div
+      class="footer fixed bottom-0 py-4 md:py-6 inset-x-auto w-full h-24 md:h-28 bg-green-400 text-white md:text-black md:bg-white z-20"
+    >
       <div class="container grid grid-cols-3 mx-auto">
-        <ContactButton v-for="option in contactOptions" :key="option.type" :info="option" />
+        <ContactButton
+          v-for="option in contactOptions"
+          :key="option.type"
+          :info="option"
+        />
       </div>
     </div>
   </footer>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import { legal } from '~/assets/content/global'
-import ContactButton from '~/components/ContactButton'
+import { mapGetters } from "vuex";
+import { legal } from "~/assets/content/global";
+import ContactButton from "~/components/ContactButton";
 
 export default {
-  name: 'Footer',
+  name: "Footer",
   components: {
-    ContactButton
+    ContactButton,
   },
-  data () {
+  data() {
     return {
-      legal
-    }
+      legal,
+    };
   },
   computed: {
-    ...mapGetters({ contactOptions: 'contactOptions/contactOptions' })
-  }
-}
+    ...mapGetters({ contactOptions: "contactOptions/contactOptions" }),
+  },
+};
 </script>
 
 <style>
-
 .footer {
-  box-shadow: 0 -10px 15px -3px rgba(0, 0, 0, 0.1)
+  box-shadow: 0 -10px 15px -3px rgba(0, 0, 0, 0.1);
 }
-
 </style>
