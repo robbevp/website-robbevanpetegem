@@ -10,18 +10,16 @@
 </template>
 
 <script>
-import json from '~/assets/content/global'
+import json from "~/assets/content/global";
 
 export default {
-  name: 'Header',
-  data () {
+  name: "Header",
+  data() {
     return {
-      ...json
-    }
-  }
-}
+      ...json,
+    };
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

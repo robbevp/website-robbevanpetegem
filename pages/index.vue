@@ -23,41 +23,41 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import json from '~/assets/content/pages/index'
-import About from '~/components/About'
-import Header from '~/components/Header'
-import HeaderBackground from '~/components/HeaderBackground'
-import ProjectCard from '~/components/ProjectCard'
+import { mapGetters } from "vuex";
+import json from "~/assets/content/pages/index";
+import About from "~/components/About";
+import Header from "~/components/Header";
+import HeaderBackground from "~/components/HeaderBackground";
+import ProjectCard from "~/components/ProjectCard";
 
 export default {
   components: {
     About,
     Header,
     HeaderBackground,
-    ProjectCard
+    ProjectCard,
   },
-  data () {
+  data() {
     return {
-      ...json
-    }
+      ...json,
+    };
   },
-  head () {
+  head() {
     return {
       title: this.seo.title,
       meta: [
         {
-          hid: 'description',
-          name: 'description',
-          content: this.seo.description
-        }
-      ]
-    }
+          hid: "description",
+          name: "description",
+          content: this.seo.description,
+        },
+      ],
+    };
   },
   computed: {
-    ...mapGetters({ projects: 'projects/projects' })
-  }
-}
+    ...mapGetters({ projects: "projects/projects" }),
+  },
+};
 </script>
 
 <style></style>

@@ -6,28 +6,30 @@
 </template>
 
 <script>
-import settings from '~/assets/content/global.json'
-import Footer from '~/components/Footer'
+import settings from "~/assets/content/global.json";
+import Footer from "~/components/Footer";
 
 export default {
   components: {
-    Footer
+    Footer,
   },
-  data () {
+  data() {
     return {
-      ...settings
-    }
+      ...settings,
+    };
   },
-  head () {
+  head() {
     return {
       title: this.seo.title,
       meta: [
-        { hid: 'description', name: 'description', content: this.seo.description }
-      ]
-    }
-  }
-}
+        {
+          hid: "description",
+          name: "description",
+          content: this.seo.description,
+        },
+      ],
+    };
+  },
+};
 </script>
-<style>
-
-</style>
+<style></style>
