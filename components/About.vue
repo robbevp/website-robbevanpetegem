@@ -16,11 +16,12 @@
       {{ title }}
     </h2>
     <!-- There currently isn't a better way to render markdown. Since this content isn't user generated we have less to worry about an XSS attack -->
-    <!-- eslint-disable-next-line vue/no-v-html -->
+    <!-- eslint-disable vue/no-v-html -->
     <div
       class="text-md sm:row-start-2 row-span-1 col-span-12 sm:col-start-5 lg:col-start-5 lg:col-end-12 sm:col-end-13 px-4 sm:pl-0"
       v-html="$md.render(description)"
     />
+    <!-- eslint-enable vue/no-v-html -->
   </aside>
 </template>
 
