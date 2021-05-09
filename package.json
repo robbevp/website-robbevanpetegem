@@ -5,29 +5,28 @@
   "author": "Robbe Van Petegem",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore . --fix"
+    "serve": "run-p watch:** --silent",
+    "publish:stage": "TAILWIND_MODE=build ELEVENTY_ENV=stage run-s build:**",
+    "publish:prod": "TAILWIND_MODE=build ELEVENTY_ENV=prod run-s build:**",
+    "build:11ty": "eleventy",
+    "watch:11ty": "eleventy --serve --incremental --quiet",
+    "build:css": "postcss \"src/_assets/**/[!_]*/*.css\" --dir public/assets/ --base src/_assets/css --map --verbose",
+    "watch:css": "yarn build:css -- --watch",
+    "lint": "eslint --ext .js --ignore-path .gitignore . --fix"
   },
   "dependencies": {
-    "nuxt": "^2.15.4"
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-img": "^0.8.3",
+    "autoprefixer": "^10.2.5",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.14",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
   },
   "devDependencies": {
-    "@aceforth/nuxt-optimized-images": "^1.4.0",
-    "@nuxtjs/eslint-config": "^6.0.0",
-    "@nuxtjs/eslint-module": "^3.0.2",
-    "@nuxtjs/markdownit": "^2.0.0",
-    "@nuxtjs/tailwindcss": "^3.4.3",
-    "babel-eslint": "^10.0.1",
     "eslint": "^7.26.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-nuxt": ">=2.0.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "mdi-vue": "^1.8.1",
-    "prettier": "^2.2.1",
-    "responsive-loader": "^2.3.0",
-    "sharp": "^0.28.1"
+    "prettier": "^2.2.1"
   }
 }
