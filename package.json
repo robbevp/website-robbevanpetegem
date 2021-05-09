@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "serve": "run-p watch:** --silent",
-    "publish:stage": "ELEVENTY_ENV=stage run-s build:**",
-    "publish:prod": "ELEVENTY_ENV=prod run-s build:**",
+    "publish:stage": "TAILWIND_MODE=build ELEVENTY_ENV=stage run-s build:**",
+    "publish:prod": "TAILWIND_MODE=build ELEVENTY_ENV=prod run-s build:**",
     "build:11ty": "eleventy",
     "watch:11ty": "eleventy --serve --incremental --quiet",
     "build:css": "postcss \"src/_assets/**/[!_]*/*.css\" --dir public/assets/ --base src/_assets/css --map --verbose",
