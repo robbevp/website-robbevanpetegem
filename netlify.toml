@@ -9,3 +9,8 @@
 
 [context.deploy-preview]
   command = "npm run publish:stage"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Permissions-Policy = "interest-cohort=()"
