@@ -1,0 +1,11 @@
+[build]
+  # Directory that contains the deploy-ready HTML files and assets
+  publish = "_public/"
+  # Default build command.
+  command = "npm run publish:prod"
+
+[context.branch-deploy]
+  command = "npm run publish:stage"
+
+[context.deploy-preview]
+  command = "npm run publish:stage"
