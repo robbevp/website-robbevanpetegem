@@ -31,11 +31,9 @@ module.exports = {
     ${Object.values(metadata)
       .map(
         (imageFormat) =>
-          `  <source type="${
-            imageFormat[0].sourceType
-          }" srcset="${imageFormat
-            .map((entry) => entry.srcset)
-            .join(", ")}"${sizesAttr}>`
+          `<source type="${imageFormat[0].sourceType}"
+            srcset="${imageFormat.map((entry) => entry.srcset).join(", ")}"
+            ${sizesAttr}>`
       )
       .join("\n")}
       <img
