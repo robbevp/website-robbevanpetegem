@@ -1,19 +1,7 @@
 <head>
-  
   <meta charset="utf-8">
-
-  <script>document.documentElement.classList.add('js');</script>
-
-  <title>{{ site.title | escape }} | {{ site.subtitle | escape}}</title>
-
-  <meta name="description" content="{% if description %}{{ description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ site.title | escape }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  {%- if noindex -%}
-  <meta name="robots" content="noindex, nofollow">
-  {%- endif -%}
 
   {%- if canonical -%}
   <link rel="canonical" href="{{ canonical }}">
@@ -21,12 +9,5 @@
   <link rel="canonical" href="{{ env.baseUrl }}{{ page.url }}">
   {%- endif -%}
 
-  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-
-  <link rel="stylesheet" href="/assets/main.css" media="all">
-
-  {%- if stylesheet -%}
-  <link rel="stylesheet" href="/assets/{{ stylesheet }}" media="all">
-  {%- endif -%}
-
+  <link rel="stylesheet" href="/_assets/styles/index.css">
 </head>

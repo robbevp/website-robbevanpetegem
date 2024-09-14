@@ -26,11 +26,4 @@ const isStaging = environment === STAGE_ENV;
 const branch = process.env.BRANCH;
 const context = process.env.CONTEXT;
 
-module.exports = {
-  environment,
-  isProduction,
-  isStaging,
-  baseUrl,
-  branch,
-  context,
-};
+export { environment, isProduction, isStaging, baseUrl, branch, context };

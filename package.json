@@ -1,32 +1,36 @@
 {
-  "name": "website-robbevanpetegem",
+  "name": "@robbevp/website-robbevanpetegem",
   "version": "1.0.0",
   "description": "Personal website for Robbe Van Petegem",
-  "author": "Robbe Van Petegem",
+  "author": "Robbe Van Petegem <git@robbevp.be>",
   "private": true,
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "github.com/robbevp/website-robbevanpetegem"
+  },
   "scripts": {
-    "serve": "run-p watch:** --silent",
-    "publish:stage": "TAILWIND_MODE=build ELEVENTY_ENV=stage run-s build:**",
-    "publish:prod": "TAILWIND_MODE=build ELEVENTY_ENV=prod run-s build:**",
-    "build:11ty": "eleventy",
-    "watch:11ty": "eleventy --serve --incremental --quiet",
-    "build:css": "postcss \"src/_assets/**/[!_]*/*.css\" --dir public/assets/ --base src/_assets/css --map --verbose",
-    "watch:css": "yarn build:css -- --watch",
-    "lint": "eslint --ext .js --ignore-path .gitignore . --fix"
+    "build": "eleventy",
+    "dev": "eleventy --serve",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:fix": "npm run lint:js -- --fix && npm run lint:css -- --fix",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint **/*.css --ignore-path .gitignore"
   },
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-img": "^3.1.8",
-    "autoprefixer": "^10.4.16",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.32",
-    "postcss-cli": "^10.1.0",
-    "tailwindcss": "^3.3.6"
+    "@11ty/eleventy": "^3.0.0-beta.1",
+    "@11ty/eleventy-img": "^4.0.2",
+    "@11tyrocks/eleventy-plugin-lightningcss": "^1.4.0",
+    "js-yaml": "^4.1.0"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.8"
+    "@tree-company/eslint-config": "^0.4.3",
+    "@tree-company/stylelint-config": "^0.4.3",
+    "eslint": "^9.9.0",
+    "prettier": "^3.3.3",
+    "stylelint": "^16.8.2"
+  },
+  "stylelint": {
+    "extends": "@tree-company/stylelint-config"
   }
 }
