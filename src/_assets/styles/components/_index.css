@@ -5,8 +5,8 @@
 }
 
 .page__contents {
-  margin-block-start: 70vh;
-  margin-inline: 5vw;
+  padding-block-start: 75vh;
+  padding-inline: 10vw;
 }
 
 .page__title {
