@@ -38,24 +38,24 @@
     urlpattern-polyfill "^10.0.0"
     ws "^8.18.0"
 
-"@11ty/eleventy-fetch@^5.0.2":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy-fetch/-/eleventy-fetch-5.0.2.tgz#b78defd86a8443f64bb0b21d5ef6f09e9f907dfe"
-  integrity sha512-yu7oZ5iv7zvFDawSYcN19cz7ddJB7OXPGZ47z/MzYmLa2LkpJm0KnZW2xGwpKvVrXd+tyb96ts6AqlkJT/ibwQ==
+"@11ty/eleventy-fetch@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-fetch/-/eleventy-fetch-5.1.0.tgz#3e6580caf6c5ed317d22962c42520c46d0e11451"
+  integrity sha512-gSmCA3olJxRwtTkXyS+KIanq1kEufCC+JsHyTa7ta5NqmeUQlWA8zEngtXrDl+ebrAvFz2bNaxLd+0ERpnnSPQ==
   dependencies:
+    "@11ty/eleventy-utils" "^2.0.7"
     "@rgrove/parse-xml" "^4.2.0"
-    debug "^4.3.7"
-    flat-cache "^6.1.1"
-    graceful-fs "^4.2.11"
+    debug "^4.4.0"
+    flatted "^3.3.3"
     p-queue "6.6.2"
 
-"@11ty/eleventy-img@^6.0.2":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy-img/-/eleventy-img-6.0.2.tgz#8ef027b3411145b3ff5e0a10d0da4c10651322bf"
-  integrity sha512-7JYo4CX8J2jLW3Bzw7RuwLiUIr2NRPtwbspZkng0/4Hr6SaVPA7P7ZSbJcZl+K4jCpw8MCss4XoGcBZ2XejRjg==
+"@11ty/eleventy-img@^6.0.3":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-img/-/eleventy-img-6.0.3.tgz#4818caeaa215c2f51a6acb1655958bbe008be662"
+  integrity sha512-Plso/SKHhxBuS1h6kx31TLDhaT7Dq9Zn5nEQd5apiKvpyyV+axcMX4XbXCG5g+w0aGmKGIQ9mxHziioS628b1A==
   dependencies:
-    "@11ty/eleventy-fetch" "^5.0.2"
-    "@11ty/eleventy-utils" "^2.0.1"
+    "@11ty/eleventy-fetch" "^5.1.0"
+    "@11ty/eleventy-utils" "^2.0.7"
     brotli-size "^4.0.0"
     debug "^4.4.0"
     entities "^6.0.0"
@@ -78,10 +78,10 @@
   dependencies:
     normalize-path "^3.0.0"
 
-"@11ty/eleventy-utils@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy-utils/-/eleventy-utils-2.0.1.tgz#ae3d3956473f905c5b4aee92caf7d61764cc8b21"
-  integrity sha512-hicG0vPyqfLvgHJQLtoh3XAj6wUbLX4yY2se8bQLdhCIcxK46mt4zDpgcrYVP3Sjx4HPifQOdwRfOEECoUcyXQ==
+"@11ty/eleventy-utils@^2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-utils/-/eleventy-utils-2.0.7.tgz#40fa604864d64e98412f4f068a34379b471beddd"
+  integrity sha512-6QE+duqSQ0GY9rENXYb4iPR4AYGdrFpqnmi59tFp9VrleOl0QSh8VlBr2yd6dlhkdtj7904poZW5PvGr9cMiJQ==
 
 "@11ty/eleventy@^3.0.0":
   version "3.0.0"
@@ -444,13 +444,6 @@
     strip-ansi-cjs "npm:strip-ansi@^6.0.1"
     wrap-ansi "^8.1.0"
     wrap-ansi-cjs "npm:wrap-ansi@^7.0.0"
-
-"@keyv/serialize@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@keyv/serialize/-/serialize-1.0.2.tgz#72507c4be94d8914434a4aa80661f8ac6131967f"
-  integrity sha512-+E/LyaAeuABniD/RvUezWVXKpeuvwLEA9//nE9952zBaOdBd2mQ3pPoM8cUe2X6IcMByfuSLzmYqnYshG60+HQ==
-  dependencies:
-    buffer "^6.0.3"
 
 "@keyv/serialize@^1.0.3":
   version "1.0.3"
@@ -917,14 +910,6 @@ bytes@3.1.2, bytes@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.1.2.tgz#8b0beeb98605adf1b128fa4386403c009e0221a5"
   integrity sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg==
-
-cacheable@^1.8.7:
-  version "1.8.7"
-  resolved "https://registry.yarnpkg.com/cacheable/-/cacheable-1.8.7.tgz#a4e2c99de531539cb26db7003f1ac9287b6d9f15"
-  integrity sha512-AbfG7dAuYNjYxFUtL1lAqmlWdxczCJ47w7cFjhGcnGnUdwSo6VgmSojfoW3tUI12HUkgTJ5kqj78yyq6TsFtlg==
-  dependencies:
-    hookified "^1.6.0"
-    keyv "^5.2.3"
 
 cacheable@^1.8.9:
   version "1.8.9"
@@ -1997,15 +1982,6 @@ flat-cache@^4.0.0:
     flatted "^3.2.9"
     keyv "^4.5.4"
 
-flat-cache@^6.1.1:
-  version "6.1.5"
-  resolved "https://registry.yarnpkg.com/flat-cache/-/flat-cache-6.1.5.tgz#a3e0077571aa340c85c011aa6b9150b4606e2b0d"
-  integrity sha512-QR+2kN38f8nMfiIQ1LHYjuDEmZNZVjxuxY+HufbS3BW0EX01Q5OnH7iduOYRutmgiXb797HAKcXUeXrvRjjgSQ==
-  dependencies:
-    cacheable "^1.8.7"
-    flatted "^3.3.2"
-    hookified "^1.6.0"
-
 flat-cache@^6.1.8:
   version "6.1.8"
   resolved "https://registry.yarnpkg.com/flat-cache/-/flat-cache-6.1.8.tgz#968fb89b19df488fe60f346857ffc54b8dd0ba14"
@@ -2019,11 +1995,6 @@ flatted@^3.2.9:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.3.1.tgz#21db470729a6734d4997002f439cb308987f567a"
   integrity sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==
-
-flatted@^3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.3.2.tgz#adba1448a9841bec72b42c532ea23dbbedef1a27"
-  integrity sha512-AiwGJM8YcNOaobumgtng+6NHuOqC3A7MixFeDafM3X9cIUM+xUXoS5Vfgf+OihAYe20fxqNM9yPBXJzRtZ/4eA==
 
 flatted@^3.3.3:
   version "3.3.3"
@@ -2344,11 +2315,6 @@ hasown@^2.0.0, hasown@^2.0.1, hasown@^2.0.2:
   integrity sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==
   dependencies:
     function-bind "^1.1.2"
-
-hookified@^1.6.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/hookified/-/hookified-1.7.0.tgz#d1eb2a1d099fd4eeb3c43e5f75f3fe2ae82aae13"
-  integrity sha512-XQdMjqC1AyeOzfs+17cnIk7Wdfu1hh2JtcyNfBf5u9jHrT3iZUlGHxLTntFBuk5lwkqJ6l3+daeQdHK5yByHVA==
 
 hookified@^1.7.1:
   version "1.8.1"
@@ -2900,13 +2866,6 @@ keyv@^4.5.4:
   integrity sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==
   dependencies:
     json-buffer "3.0.1"
-
-keyv@^5.2.3:
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/keyv/-/keyv-5.2.3.tgz#32db1a4aa8d05e2b8ab82688a57ddc5d2184a25c"
-  integrity sha512-AGKecUfzrowabUv0bH1RIR5Vf7w+l4S3xtQAypKaUpTdIR1EbrAcTxHCrpo9Q+IWeUlFE2palRtgIQcgm+PQJw==
-  dependencies:
-    "@keyv/serialize" "^1.0.2"
 
 keyv@^5.3.1:
   version "5.3.2"
