@@ -8,8 +8,6 @@ updates:
     time: "06:00"
     timezone: Europe/Brussels
   open-pull-requests-limit: 10
-  reviewers:
-  - robbevp
 - package-ecosystem: github-actions
   directory: "/"
   schedule:
@@ -18,5 +16,3 @@ updates:
     time: "06:00"
     timezone: Europe/Brussels
   open-pull-requests-limit: 10
-  reviewers:
-  - robbevp
