@@ -1,3 +1,15 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "@tree-company/eslint-config",
+        "@tree-company/stylelint-config",
+        "eslint",
+        "prettier",
+        "stylelint"
+      ],
+      "groupName": "Linting"
+    }
+  ]
 }
