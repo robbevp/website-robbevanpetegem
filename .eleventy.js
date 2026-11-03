@@ -1,7 +1,7 @@
 import glob from "fast-glob";
 import { EleventyI18nPlugin } from "@11ty/eleventy";
 import lightningCSS from "@11tyrocks/eleventy-plugin-lightningcss";
-import yaml from "js-yaml";
+import { load } from "js-yaml";
 import draftsPlugin from "./11ty/plugins/drafts.js";
 
 const INPUT_DIR = "src";
@@ -26,7 +26,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(lightningCSS);
 
   eleventyConfig.addPlugin(EleventyI18nPlugin, { defaultLanguage: "nl" });
-  eleventyConfig.addDataExtension("yml,yaml", yaml.load);
+  eleventyConfig.addDataExtension("yml,yaml", load);
   eleventyConfig.addGlobalData(
     "eleventyComputed.eleventyExcludeFromCollections",
     eleventyComputedExcludeFromCollections,
